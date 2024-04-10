@@ -1,0 +1,58 @@
+<ion-app>
+  <ion-menu contentId="configuracoes">
+
+
+  </ion-menu>
+  <ion-menu contentId="main">
+
+    <ion-content>
+      
+      <div class="menu-cabecalho-bg"></div>
+      
+      <div class="cabecalho-conteudo">
+
+        
+        <button (click)="showPerfil()"><ion-icon name="person-circle-outline"></ion-icon></button> 
+         <!--isso aqui é para foto de perfil , talvez tirar-->
+
+        <ion-label>
+
+          <h2>Costelinha ao molho Barbecue</h2> <!--isso aqui é só para ver como o nome e email vão aparecer , posteriormente mudar para uma variavel-->
+          <p>costearrobagmail.com</p>
+
+        </ion-label>
+
+      </div>  
+
+      <div id="linha-horizontal"></div>
+      
+      <ion-list lines="none" class="menu-itens">
+        
+        <ion-item>                        <!--icones : para adicionar , vai em app.component , coloque o nome do icone sem o - no ultimo import , depois , aina em app.component , coloque o nome do icone na função Constructor .-->
+         
+          <ion-icon slot="start"  name="diamond-outline"></ion-icon><button (click)="showPremium()">Recursos Premium</button> <!--slot start coloca um espaçamento entre o icon e o elemento-->
+          
+        </ion-item>
+        
+        <ion-item>
+          <ion-icon slot="start" name="cash-outline"></ion-icon><button (click)="showCentralAjuda()">Central de Ajuda</button>
+        </ion-item>
+        
+        <ion-item>
+          <ion-icon slot="start" name="card-outline"></ion-icon><button (click)="showPolitica()">Politica de Privacidade</button>
+        </ion-item>
+          
+        <ion-item>
+          <ion-icon slot="start" name="settings-outline"></ion-icon><button (click)="showSobre()">Sobre</button>
+        </ion-item>
+
+      </ion-list>
+
+      
+
+    
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+
+</ion-app>

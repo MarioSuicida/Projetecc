@@ -1,0 +1,74 @@
+*{
+  font-family: lato;
+
+  
+}
+
+
+.menu-cabecalho-bg{
+  height: 150px;
+  background-color:#14638C;
+
+}
+
+.cabecalho-conteudo{
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+
+  
+ 
+
+  ion-icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+ 
+    margin-right: 14px;
+  }
+
+  h2{
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  p{
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 0.4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+}
+
+#linha-horizontal {
+  width: 270px;
+  border: 2.5px solid rgb(201, 197, 197);
+  border-radius: 3px;
+  margin-left: 8%;
+
+}
+
+
+
+button{
+  text-decoration: none;
+  background-color: #14638C;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  
+}
+
+#lopos {
+  position: fixed;
+  bottom: 20px; /* ajuste conforme necessário para a margem inferior */
+  right: 20px; /* ajuste conforme necessário para a margem direita */
+}
+
+.menu-itens{
+  margin-top: 5%;
+  margin-left: 8%;
+
+}
